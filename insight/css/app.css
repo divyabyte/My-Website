@@ -1,10 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-a:link {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
+
 
 .wrapper {
     display: flex;
@@ -15,13 +14,18 @@ a:link {
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
-    padding-top:60px; padding-left:22px
+    padding-top:60px; padding-left:22px;
+    position:fixed;
 }
+
 
 #sidebar.active {
     margin-left: -250px;
 }
 
+.thumbnail:hover{
+  background-color:#fad349 !important;
+}
 
 @media (max-width: 768px) {
     #sidebar {
@@ -33,7 +37,7 @@ a:link {
 }
 
 #content{
-     padding-top:60px; padding-left:22px
+     padding-top:60px; padding-left:270px
 }
 
 #main {

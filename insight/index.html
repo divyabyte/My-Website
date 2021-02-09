@@ -70,24 +70,104 @@
     <div style="background-color: #f8f9fa;">
 
       <div id="mySidenav" class="sidenav">
-        <a href="#" id="r1" uk-toggle="target: #offcanvas-flip"><img src="image/r1.png" style="height:40px"></a>
-        <a href="#" id="r2"><img src="image/r2.png" style="height:40px"></a>
+        <a href="#" id="r1" uk-toggle="target: #offcanvas-flip1"><img src="image/r1.png" style="height:40px"></a>
+        <a href="#" id="r2" uk-toggle="target: #offcanvas-flip2"><img src="image/r2.png" style="height:40px"></a>
         <a href="#" id="r3"><img src="image/r3.png" style="height:40px"></a>
       </div>
 
 
-      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
           <div class="uk-offcanvas-bar uk-background-default uk-text-emphasis">
 
-            <button class="uk-offcanvas-close   uk-margin-large-top" style="color:#000" type="button" uk-close></button>
+            <button class="uk-offcanvas-close uk-margin-large-top" style="color:#000" type="button" uk-close></button>
             <p class="uk-margin-large-top uk-text-large" style="color:#000"><img src="image/r1.png" style="height:50px"> Fleurop Quickorder</p>
             <p>Jetzt mit nur einem Klick Blumen für den Kunden bestellen. Bitte wählen Sie die 
-                Gröβe des gewünschten Blumenstrauβ.</p>
-            <a href="#content" class="uk-button uk-button-medium uk-button-default" style="border-radius: 40px; color: black; font-size: 9px; background-color: #f8f9fa;"><b> <img src="image/r4.png" style="height:40px"> Blumenstrauβ S</b> 14,90 EUR</a>
+                Größe des gewünschten Blumenstrauß.</p>
+            <div class="uk-button thumbnail  uk-width-1-1 uk-button-default uk-margin-small-bottom" style="border-radius: 40px; color: black; font-size: 10px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r4.png" style="height: 30px; position: relative;left: -28px;top: 10px;"> Blumenstrauβ S</b> 
+                <p class="uk-text-small" style="margin-top:-18px">14,90 EUR</p>
+            </div>
+
+             <div class="uk-button thumbnail uk-width-1-1 uk-button-default uk-margin-small-bottom" style="border-radius: 40px; color: black; font-size: 10px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r4.png" style="height: 30px; position: relative;left: -28px;top: 10px;"> Blumenstrauβ M</b> 
+                <p class="uk-text-small" style="margin-top:-18px">19,90 EUR</p>
+            </div>
+
+            <div class="uk-button thumbnail uk-width-1-1 uk-button-default" style="border-radius: 40px; color: black; font-size: 10px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r4.png" style="height: 30px; position: relative;left: -28px;top: 10px;"> Blumenstrauβ L</b> 
+                <p class="uk-text-small" style="margin-top:-18px">29,90 EUR</p>
+            </div>
+
+            <p class="uk-margin-top" style="border-top:1px solid #f8f9fa; padding-top:20px"><b>Lieferadresse</b></p>
+            <ul style="list-style-type:none; "  class="uk-padding-remove">
+              <li>Manuel Neumann</li>
+              <li>Eichendorf Weg 19a</li>
+              <li>39440 Bad Honnef</li>
+              <li style="border-bottom:1px solid #f8f9fa; padding-bottom:20px">Deutshland</li>
+            </ul>
+
+            <p ><b>Nachricht</b></p>
+            <form>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Geben Sie lhre Nachricht..." rows="3"></textarea>
+            </div>
+            <a class="uk-button uk-button-medium uk-button-default" style="border-radius: 40px; color: black; font-size: 11px; background-color: #fad349;"><b> Blumenstrauβ versenden</b></a>
+
+            </form>
 
 
           </div>
       </div>
+
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+          <div class="uk-offcanvas-bar uk-background-default uk-text-emphasis">
+
+            <button class="uk-offcanvas-close uk-margin-large-top" style="color:#000" type="button" uk-close></button>
+            <p class="uk-margin-large-top uk-text-large" style="color:#000"><img src="image/r5.png" style="height:50px"> Amazon Gutschein</p>
+            <p>Jetzt mit nur einem Klick Blumen für den Kunden bestellen. Bitte wählen Sie die 
+                Größe des gewünschten Blumenstrauß.</p>
+            <div class="uk-button thumbnail uk-width-1-1 uk-button-default uk-margin-small-bottom" style="border-radius: 40px; color: black; font-size: 13px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r6.png" style="height: 30px; position: relative;left: -28px;top: 10px;">10&euro; Gutschein</b> 
+                <p class="uk-text-small uk-text-light" style="margin-top:-18px">10,00 EUR</p>
+            </div>
+
+             <div class="uk-button thumbnail uk-width-1-1 uk-button-default uk-margin-small-bottom" style="border-radius: 40px; color: black; font-size: 13px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r6.png" style="height: 30px; position: relative;left: -28px;top: 10px;">25&euro; Gutschein</b> 
+                <p class="uk-text-small uk-text-light" style="margin-top:-18px">25,00 EUR</p>
+            </div>
+
+            <div class="uk-button thumbnail uk-width-1-1 uk-button-default" style="border-radius: 40px; color: black; font-size: 13px; background-color: #f8f9fa;">
+                <b>
+                <img src="image/r6.png" style="height: 30px; position: relative;left: -28px;top: 10px;">50&euro; Gutschein</b> 
+                <p class="uk-text-small uk-text-light" style="margin-top:-18px">50,00 EUR</p>
+            </div>
+
+            <p class="uk-margin-top" style="border-top:1px solid #f8f9fa; padding-top:20px"><b>Lieferadresse</b></p>
+            <ul style="list-style-type:none; "  class="uk-padding-remove">
+              <li>Manuel Neumann</li>
+              <li>Eichendorf Weg 19a</li>
+              <li>39440 Bad Honnef</li>
+              <li style="border-bottom:1px solid #f8f9fa; padding-bottom:20px">Deutshland</li>
+            </ul>
+
+            <p ><b>Nachricht</b></p>
+            <form>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Geben Sie lhre Nachricht..." rows="3"></textarea>
+            </div>
+            <a class="uk-button uk-button-medium uk-button-default" style="border-radius: 40px; color: black; font-size: 11px; background-color: #fad349;"><b> Blumenstrauβ versenden</b></a>
+
+            </form>
+
+
+          </div>
+      </div>
+
 
       <div class="wrapper">
 
