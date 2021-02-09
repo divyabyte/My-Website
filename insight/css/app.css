@@ -1,0 +1,120 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    padding-top:60px; padding-left:22px
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+#content{
+     padding-top:60px; padding-left:22px
+}
+
+#main {
+  margin: 20px 0;
+}
+
+#main #faq .card {
+  border: 0;
+}
+
+#main #faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+          box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+
+#main #faq .card .card-header .btn-header-link {
+  color: #000;
+  display: block;
+  text-align: left;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+  content: "\f106";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+  background: #fff;
+  color: #000;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f107";
+}
+
+#main #faq .card .collapsing {
+  background: #fff;
+  line-height: 30px;
+}
+
+#main #faq .card .collapse {
+  border: 0;
+}
+
+#main #faq .card .collapse.show {
+  background: #fff;
+  line-height: 30px;
+  color: #000;
+}
+
+
+#mySidenav a {
+  position: absolute;
+  right: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#r1 {
+  top: 120px;
+}
+
+#r2 {
+  top: 165px;
+}
+
+#r3 {
+  top: 210px;
+}
+
+

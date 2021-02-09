@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insight.profile</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- navbar -->
+      <nav class="navbar sticky-top  navbar-expand-md bg-white uk-sticky " >
+          <!-- Brand -->
+          <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+        
+          <!-- toogler icon -->
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span uk-icon="menu"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#content" class="uk-button uk-button-small uk-button-default" style="border-radius: 40px; color: #adb5bd; background-color: #e9ecef; margin-left: 45px; margin-top: 6px;" >Übersicht</a>
+              </li>
+          
+              <li class="nav-item dropdown dropdown-toggle uk-text-light" style="margin-left: 20px; margin-top: 10px; font-size: small; color: #bac1c7 ;" data-toggle="dropdown">
+                  ERSTELLEN
+                <div class="dropdown-menu">
+                </div>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav uk-navbar-right" style="list-style-type: none;">
+              <li class="nav-item dropdown dropdown-toggle uk-text-light" style="margin-left: 20px; margin-top: 10px; font-size: small; color: #bac1c7 ;" data-toggle="dropdown">
+                Layout
+                <div class="dropdown-menu">
+                </div>
+              </li>
+
+              <li class="nav-item dropdown dropdown-toggle uk-text-light" style="margin-left: 20px; margin-top: 10px; font-size: small; color: #bac1c7 ;" data-toggle="dropdown">
+                Sprache
+                <div class="dropdown-menu">
+                </div>
+              </li>
+
+              <li class="nav-item" style="margin-left: 20px; margin-top: 10px; font-size: small; color: #bac1c7 ;">
+                <span uk-icon="bell"></span>
+              </li>
+
+              <li class="nav-item" style="margin-left: 20px; margin-top: 10px; font-size: small; color: #bac1c7 ;">
+                <span uk-icon="user"></span>
+              </li>
+
+              <li class="nav-item">
+                <button class="uk-button uk-button-small uk-button-default" style="border-radius: 40px; color: black; font-size: 10px; background-color: #fad349; margin-left: 30px; margin-top: 6px;">Logout</button>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+   
+
+    <div style="background-color: #f8f9fa;">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="#" id="r1" uk-toggle="target: #offcanvas-flip"><img src="image/r1.png" style="height:40px"></a>
+        <a href="#" id="r2"><img src="image/r2.png" style="height:40px"></a>
+        <a href="#" id="r3"><img src="image/r3.png" style="height:40px"></a>
+      </div>
+
+
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+          <div class="uk-offcanvas-bar uk-background-default uk-text-emphasis">
+
+            <button class="uk-offcanvas-close   uk-margin-large-top" style="color:#000" type="button" uk-close></button>
+            <p class="uk-margin-large-top uk-text-large" style="color:#000"><img src="image/r1.png" style="height:50px"> Fleurop Quickorder</p>
+            <p>Jetzt mit nur einem Klick Blumen für den Kunden bestellen. Bitte wählen Sie die 
+                Gröβe des gewünschten Blumenstrauβ.</p>
+            <a href="#content" class="uk-button uk-button-medium uk-button-default" style="border-radius: 40px; color: black; font-size: 9px; background-color: #f8f9fa;"><b> <img src="image/r4.png" style="height:40px"> Blumenstrauβ S</b> 14,90 EUR</a>
+
+
+          </div>
+      </div>
+
+      <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <div class="uk-margin-left" style="border-bottom: 2px solid #e7ecf1a6; padding-bottom:20px">
+
+              <div class="row ">
+                <img src="image/user.png" style="height:40px">
+                <div>
+                  <p class="uk-margin-small-left uk-margin-remove-bottom "><b>Manuel Neumann</b><img src="image/key.png" style="height:30px"></p>
+                  <div class="row">
+                    <div class="col-5">
+                      <p style="font-size:10px"><span uk-icon="icon: user; ratio: 0.5">&nbsp; 16.9073</span></p>
+                    </div>
+                    <div class="col-5">
+                      <p style="font-size:10px"><span uk-icon="icon:  refresh; ratio: 0.5"> 22.9073</span></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <p class="uk-text-small uk-margin-remove-bottom">Rating &nbsp;<img src="image/rateBar.png" width="90px"> &nbsp; 76/100</p>
+
+            </div>
+
+            <div class="uk-margin-top" style="border-bottom: 2px solid #e7ecf1a6;">
+              <ul style="list-style-type: none; font-size: 13px;">
+                <li class="nav-item">        
+                  <a href="#content" class="uk-button uk-button-medium uk-button-default" style="border-radius: 40px; color: black; font-size: 9px; background-color: #fad349;"><b> <img src="image/ac.png"> Zusammenfassung</b></a>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left uk-margin-top"><img src="image/alert.png">&nbsp <a href="#alert" style="color:#000;">  Alerts</a></p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/life.png">&nbsp Life Changing Moments</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/leb.png">&nbsp Lebensphase</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/kon.png">&nbsp Konsum</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/ris.png">&nbsp Risikoprüfung</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/woh.png">&nbsp <a href="#wohnverhältnisse" style="color:#000;">  Wohnverhältnisse </a></p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/mob.png">&nbsp Mobilität</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/kre.png">&nbsp Kredite</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/ver.png">&nbsp Versicherungen</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/fre.png">&nbsp Freizeit</p>
+                </li>
+                <li class="nav-item">
+                  <p class="uk-margin-small-left"><img src="image/ene.png">&nbsp Energie</p>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="row">
+              <div class="col-9 col-sm-10 col-md-10 col-xl-8 col-lg-8 uk-margin-left" >
+
+                <div class="uk-card uk-border-rounded	uk-padding-small uk-card-default">
+                  <img src="image/ube.png" style="border-bottom:1px solid #e7ecf1a6;">
+                  <!-- <img src="image/ube2.png"> -->
+
+                  <div class="row">
+
+                      <div class="col-lg-4 uk-padding-remove uk-margin-top" style="border-right:1px solid #e7ecf1a6">
+                        <ul style="list-style-type: none; padding-left:15px" class="uk-padding-remove ">
+                          <div style="background-color:#f8f9fa; padding-left:15px;margin-bottom:15px; border-radius:40px">
+                            <li class="uk-text-small" style="padding:3px" >ARBEIGEBER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Deutz AG</li>
+                          </div>
+                          <li class="uk-text-small" style=" padding-left:15px;padding-bottom:15px">MIETEINNAHEN &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  1.920 &euro; / mtl</li>
+                          <li class="uk-text-small" style=" padding-left:15px">WEITERS GEHALT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.920 &euro; / mtl</li>
+                        </ul>
+
+                      </div> 
+
+
+                      <div class="col-lg-4 uk-padding-remove uk-margin-small-right uk-margin-top" style="border-right:1px solid #e7ecf1a6">
+
+                          <ul style="list-style-type: none" class="uk-text-center uk-text-light uk-text-small uk-padding-remove">
+                            <li class="uk-text-small " style=" padding-bottom:15px" >UNTERHALT &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;   0 &euro; / mtl.</li>
+                            <li class="uk-text-small" >ELTERNGELD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;   0 &euro; / mtl.</li>
+                          </ul>
+
+                      </div> 
+
+
+                      <div class="col-lg-3 uk-padding-remove">
+                          <p class="uk-margin-top uk-text-light">ALERTS</p>
+                          <ul style="list-style-type: none" class="uk-text-light uk-text-small uk-padding-remove">
+                            <li>Gehaltseingang</li>
+                            <li><a href="#center" style="color:#000">Inkasso Info</a></li>
+                            <li>Risikohinweis</li>
+                          </ul>
+                      </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="uk-margin-top">
+                  <img src="image/kon1.png" style="height:170px">
+                  <img src="image/spa1.png" href="#modal-center1" uk-toggle style="height:170px">
+                  <img src="image/ver1.png" style="height:169px">
+                </div>
+              </div>
+
+              <div class="col-8 col-sm-8 col-md-8 col-xl-3 col-lg-3 stn">
+                <img src="image/stan.png" href="#modal-center" uk-toggle style="height:200px">
+                <div class="uk-card uk-border-rounded uk-margin-top	uk-padding-small uk-card-default">
+                  <h4 class="uk-margin-small-bottom">Rating</h4>
+                  <img src="image/rating1.png">
+                </div>
+              </div>
+
+            <!-- standort model -->
+            <div id="modal-center" class="uk-border-rounded uk-flex-top uk-padding-remove" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
+                  <h5 class="uk-margin-small-top uk-margin-small-left">AKtivitätsmap</h5>
+                  <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                  <img src="image/stan2.png" style="height:400px; width:2000px">
+              </div>
+            </div>
+
+            <!-- sparen model -->
+            <div id="modal-center1" class="uk-border-rounded uk-flex-top" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <h5>Sparen</h5>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <div class="row">
+
+                  <div class="col-5 col-lg-5 uk-text-small uk-padding-remove">
+
+                 <img src="image/sparen2.png" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> 
+
+                  </div>
+                  <div class="col-3 col-lg-3 uk-padding-remove">
+                    <img src="image/vermogen.png"> 
+                  </div>
+                  <div class="col-4 col-lg-4 uk-padding-remove">
+                    <img src="image/spren1.png"> 
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            </div>
+
+
+            <Section id="alert" class="uk-margin-left uk-margin-large-right">
+              <div class="uk-card uk-border-rounded	uk-padding-small uk-margin-top uk-card-default">
+                  <h4 class="uk-margin-bottom">Alerts</h4>
+
+                  <img src="image/alert1.png" style="height:150px"> 
+                  <img src="image/alert2.png" style="height:150px"> 
+                  <img src="image/alert3.png" style="height:150px"> 
+                  <img src="image/alert4.png" style="height:140px"> 
+                  <img src="image/alert5.png" style="height:140px">
+                  <img src="image/alert6.png" style="height:140px"> 
+
+                  <div style="background-color:#fad349" class="uk-margin-top uk-border-rounded">
+                    <p class="uk-padding-small">Hinweis: 2 relevante Versicherungen wunden nicht gefunden. 1 Versicherungen enthält Optimierungspotenzial</p>
+                  </div>
+
+
+                  <img src="image/alert7.png" style="width:346px; height:60px;"> 
+                  <img src="image/alert8.png" style="width:346px; height:60px;"> 
+                  <img src="image/alert9.png" href="#modal-center3" uk-toggle style="width:346px; height:60px;"> 
+
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img class="d-flex justify-content-center" src="image/alert10.png" > 
+                  </div>
+
+
+            <!-- bahn model -->
+            <div id="modal-center3" class="uk-border-rounded uk-padding-small uk-flex-top" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body  uk-margin-auto-vertical">
+                  <h5>Empfehlung</h5>
+                  <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                  <div class=" uk-padding-remove uk-text-center uk-text-small">
+                    <img  src="image/piggy.png">
+                    <p>ca.5 Fahrten pro Monat Im wert von 431 &euro;<br>Mit der BahnCard 50 fur 199&euro; mtl. spart <br>
+                    der Kunden bis 2u 232&euro; pro Monat</p>
+
+                    <img src="image/alert9.png" style="width:50%; height:60px; bottom:1px"> 
+                  </div>
+
+                  
+              </div>
+            </div>
+
+
+              </div>
+            </Section>
+
+            <div class="uk-margin-left  uk-margin-large-right">
+              <div id="main">
+                <div class="accordion" id="faq">
+                  <div class="card">
+                    <div class="card-header" id="faqhead2">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                        aria-expanded="true" aria-controls="faq1">Life Changing Methods</a>
+                    </div>
+
+                    <div id="faq1" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="uk-margin-left  uk-margin-large-right">
+              <div id="main">
+                <div class="accordion" id="faq">
+                  <div class="card">
+                    <div class="card-header" id="faqhead2">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                        aria-expanded="true" aria-controls="faq2">Lebensphase</a>
+                    </div>
+
+                    <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Section id="wohnverhältnisse" class="uk-margin-left uk-margin-large-right">
+              <div class="uk-card uk-border-rounded	uk-padding-small uk-margin-top uk-card-default">
+                  <h4 class="uk-margin-bottom">Wohnverhältnisse</h4>
+                  <img src="image/woh1.png">
+              </div>
+            </Section>
+
+      </div>  
+      
+  
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
