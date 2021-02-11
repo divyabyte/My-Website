@@ -65,8 +65,6 @@
           </div>
       </nav>
 
-   
-
     <div style="background-color: #f8f9fa;">
 
       <div id="mySidenav" class="sidenav">
@@ -74,7 +72,6 @@
         <a href="#" id="r2" uk-toggle="target: #offcanvas-flip2"><img src="image/r2.png" style="height:40px"></a>
         <a href="#" id="r3"><img src="image/r3.png" style="height:40px"></a>
       </div>
-
 
       <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
           <div class="uk-offcanvas-bar uk-background-default uk-text-emphasis">
@@ -169,7 +166,7 @@
       </div>
 
 
-      <div class="wrapper">
+      <div class="wrapper" id="wrapper">
 
         <!-- Sidebar -->
         <nav id="sidebar">
@@ -179,13 +176,14 @@
               <div class="row ">
                 <img src="image/user.png" style="height:40px">
                 <div>
-                  <p class="uk-margin-small-left uk-margin-remove-bottom "><b>Manuel Neumann</b><img src="image/key.png" style="height:30px"></p>
+                  <p class="uk-margin-small-left uk-margin-remove-bottom"><b>Manuel Neumann</b><a onclick="myFunction()"><img  src="image/key.png" style="height:30px"></a></p>
                   <div class="row">
                     <div class="col-5">
                       <p style="font-size:10px"><span uk-icon="icon: user; ratio: 0.5">&nbsp; 16.9073</span></p>
                     </div>
                     <div class="col-5">
                       <p style="font-size:10px"><span uk-icon="icon:  refresh; ratio: 0.5"> 22.9073</span></p>
+                      
                     </div>
                   </div>
 
@@ -285,7 +283,7 @@
 
                 </div>
 
-                <div class="uk-margin-top">
+                <div id="demo1" class="uk-margin-top">
                   <img src="image/kon1.png" style="height:170px">
                   <img src="image/spa1.png" href="#modal-center1" uk-toggle style="height:170px">
                   <img src="image/ver1.png" style="height:169px">
@@ -294,7 +292,7 @@
 
               <div class="col-8 col-sm-8 col-md-8 col-xl-3 col-lg-3 stn">
                 <img src="image/stan.png" href="#modal-center" uk-toggle style="height:200px">
-                <div class="uk-card uk-border-rounded uk-margin-top	uk-padding-small uk-card-default">
+                <div id="demo" class="uk-card uk-border-rounded uk-margin-top	uk-padding-small uk-card-default">
                   <h4 class="uk-margin-small-bottom">Rating</h4>
                   <img src="image/rating1.png">
                 </div>
@@ -349,7 +347,8 @@
 
             <Section id="alert" class="uk-margin-left uk-margin-large-right">
               <div class="uk-card uk-border-rounded	uk-padding-small uk-margin-top uk-card-default">
-                  <h4 class="uk-margin-bottom">Alerts</h4>
+                <div id="demo-blur">
+                  <h4  class="uk-margin-bottom">Alerts</h4>
 
                   <img src="image/alert1.png" style="height:150px"> 
                   <img src="image/alert2.png" style="height:150px"> 
@@ -357,6 +356,8 @@
                   <img src="image/alert4.png" style="height:140px"> 
                   <img src="image/alert5.png" style="height:140px">
                   <img src="image/alert6.png" style="height:140px"> 
+
+                </div>
 
                   <div style="background-color:#fad349" class="uk-margin-top uk-border-rounded">
                     <p class="uk-padding-small">Hinweis: 2 relevante Versicherungen wunden nicht gefunden. 1 Versicherungen enthält Optimierungspotenzial</p>
@@ -437,23 +438,24 @@
               </div>
             </Section>
 
-      </div>  
+        </div>  
       
   
+      </div>
+
     </div>
 
     <!-- js -->
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>
